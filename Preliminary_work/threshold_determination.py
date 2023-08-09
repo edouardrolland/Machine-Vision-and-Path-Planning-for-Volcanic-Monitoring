@@ -47,9 +47,9 @@ def detect_movement(image, prev_image):
 
 without_motion = []
 with_motion = []
-
-for folder in enumerate_folders(r"mouvement_detection_pictures"):
-     Files = enumerate_files(r"mouvement_detection_pictures" + "\\" + folder)
+##### Add here the path to the folder which contains pictures
+for folder in enumerate_folders(r"Mouvement_detection_pictures"):
+     Files = enumerate_files(r"Mouvement_detection_pictures" + "\\" + folder)
      without_motion.append(detect_movement(cv2.imread(Files[0]), cv2.imread(str(Files[1])))*100)
      without_motion.append(detect_movement(cv2.imread(Files[2]), cv2.imread(str(Files[3])))*100)
      with_motion.append(detect_movement(cv2.imread(Files[3]), cv2.imread(str(Files[4])))*100)
