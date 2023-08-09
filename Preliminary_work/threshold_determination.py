@@ -48,8 +48,8 @@ def detect_movement(image, prev_image):
 without_motion = []
 with_motion = []
 
-for folder in enumerate_folders(r"C:\Users\edoua\Documents\Birse\Bristol\MSc Thesis\Mouvement detection"):
-     Files = enumerate_files(r"C:\Users\edoua\Documents\Birse\Bristol\MSc Thesis\Mouvement detection" + "\\" + folder)
+for folder in enumerate_folders(r"mouvement_detection_pictures"):
+     Files = enumerate_files(r"mouvement_detection_pictures" + "\\" + folder)
      without_motion.append(detect_movement(cv2.imread(Files[0]), cv2.imread(str(Files[1])))*100)
      without_motion.append(detect_movement(cv2.imread(Files[2]), cv2.imread(str(Files[3])))*100)
      with_motion.append(detect_movement(cv2.imread(Files[3]), cv2.imread(str(Files[4])))*100)
@@ -61,14 +61,11 @@ ax.axhline(y=0.8, color='red', linestyle='--', label='Ligne à y=50')
 ax.text(0.1, 0.08508, 'Moving Threshold', transform=ax.transAxes,
         horizontalalignment='center', color='red')
 
-# Étiquettes des boxplots
+# Boxplot labels
 etiquettes = ['Static', 'Take-off']
 ax.set_xticklabels(etiquettes, fontsize = 15)
 
-# Titre du graphique
 plt.ylabel('Proportion of Modified Pixel Surface (%)', fontsize = 15)
-
-# Affichage du graphique
 plt.grid()
 plt.show()
 
