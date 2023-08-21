@@ -24,19 +24,6 @@ class Plume:
         y = - (t - self.__t_start) * self.__W_speed * np.cos(np.deg2rad(self.__W_direction))
         return (x, y)
 
-    def where_meters_wind_shift(self, t):
-
-        error = 2 *(t - self.__t_start) + 96.36 - 330
-
-        x = - (t - self.__t_start) * self.__W_speed * np.sin(np.deg2rad(self.__W_direction))
-        y = - (t - self.__t_start) * self.__W_speed * np.cos(np.deg2rad(self.__W_direction))
-
-        x = x + error * np.sin(np.deg2rad(self.__W_direction))
-        y = y + error * np.cos(np.deg2rad(self.__W_direction))
-
-        return (x,y)
-
-
     def where_geo(self, t):
         if self.where_meters(t) == None:
             return None
