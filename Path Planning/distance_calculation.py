@@ -6,7 +6,7 @@ import geopy.distance
 from geopy import distance
 from geopy.point import Point
 
-def distance_entre_deux_points(x1, y1, x2, y2):
+def distance_between_2_points(x1, y1, x2, y2):
     point1 = np.array([x1, y1])
     point2 = np.array([x2, y2])
     return np.linalg.norm(point2 - point1)
