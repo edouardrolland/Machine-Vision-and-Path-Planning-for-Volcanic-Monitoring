@@ -4,7 +4,7 @@
 
 Welcome to the repository for the drone-based volcanic plume monitoring project. This project is the result of my master's thesis that explores the integration of machine vision and path planning techniques to enhance the capabilities of drones in monitoring volcanic activities, specifically targeting plume interceptions at Volcano Fuego in Guatemala.
 
-![Fuego](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheworldtravelguy.com%2Facatenango-hike-volcan-de-fuego%2F&psig=AOvVaw1CJupm4-MAml6CgzzZnPqM&ust=1699950100951000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjquOHFwIIDFQAAAAAdAAAAABAD)
+![Fuego](https://theworldtravelguy.com/wp-content/uploads/2022/12/DSCF8237_1200-3.jpg)
 
 
 ## Table of Contents
