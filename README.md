@@ -49,6 +49,9 @@ For general environmental awareness, an object detection model based on YOLOv8 h
 
 The labeled databases, comprising Object Detection and Classification datasets, are valuable resources that can be used for other machine vision projects. However, it's important to note that the training data represents a specific season, and future work could involve expanding the database to include diverse environmental conditions.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pSGYUPancfA" frameborder="0" allowfullscreen></iframe>
+
+
 ## 3. Path Planning
 
 The path planning component addresses the trajectory generation for the drone during plume interception missions. The simulation, facilitated by ArduPilot, introduces potential biases that might not precisely represent real-world wind impacts on the drone. The proposed trajectory generation method assumes constant wind conditions throughout the flight, which might pose challenges in dynamic meteorological scenarios.
